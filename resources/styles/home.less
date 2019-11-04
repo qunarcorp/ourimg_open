@@ -1,0 +1,92 @@
+.q-home-page {
+    .q-home-header {
+        height: 450px;
+        padding-top: 84px;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-position-x: center;
+        background-image: url("/img/3b5e1210ebf3a7ad92be4c9910750efa.jpg");
+        cursor: pointer;
+        .content {
+            width: 700px;
+            margin: auto;
+            padding-top: 150px;
+            .title {
+                font-size: 48px;
+                color: #FFFFFF;
+            }
+            .search-tool {
+                margin-top: 22px;
+                margin-left: -4px;
+                border: 4px solid rgba(255,255,255,0.19);
+                .search-select {
+                    width: 15%;
+                    .ant-select-selection {
+                        border: none;
+                        height: 70px;
+                        border-radius: 0;
+                        &:focus, &:hover {
+                            box-shadow: none;
+                        }
+                        .ant-select-selection__rendered {
+                            line-height: 70px;
+                            font-size: 16px;
+                            margin: 0 24px;
+                        }
+                    }
+                    .ant-select-arrow {
+                        right: 24px;
+                    }
+                }
+                .search-input {
+                    width: 85%;
+                    height: 70px;
+                    > .ant-input {
+                        border: none;
+                        padding-left: 20px;
+                        padding-right: 80px;
+                        &:focus, &:hover {
+                            box-shadow: none;
+                        }
+                    }
+                    .ant-input-search-button {
+                        height: 70px;
+                        width: 80px;
+                        border-radius: 0;
+                        > .anticon-search {
+                            font-size: 35px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .q-gallery-title {
+        color: #000;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .footer-banner {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-position-x: center;
+        background-image: url("/img/banner-bottom.png");
+        .q-content {
+            position: relative;
+            height: 350px;
+            display: block;
+            cursor: pointer;
+            .close-icon {
+                font-size: 35px;
+                position: absolute;
+                right: 0;
+                top: 75px;
+                cursor: pointer;
+            }
+        }
+    }
+}

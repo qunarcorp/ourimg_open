@@ -1,0 +1,239 @@
+.user-cart-container {
+    display: flex;
+    justify-content: center;
+    .user-cart-blank {
+        height: 300px;
+        text-align: center;
+        color: @gray-text-color;
+        margin: 50px 0;
+        width: @content-width;
+        padding-top: 100px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    }
+    .user-cart {
+        margin: 50px 0;
+        width: @content-width;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+        .tab-title {
+            width: 70px;
+            display: flex;
+            justify-content: center;
+        }
+        .ant-tabs-tab {
+            width: 100px;
+        }
+        .ant-tabs-tab-active {
+            font-weight: 400;
+            font-size: 18px;
+            .tab-title {
+                color: rgba(0, 0, 0, 0.65);
+            }
+        }
+        .ant-tabs-ink-bar {
+            width: 100px;
+            height: 3px;
+        }
+        .user-cart-list-container {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            > div {
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                width: 25%;
+            }
+        }
+        .user-cart-toolbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 50px;
+            margin: 20px 8px;
+            position: relative;
+            > span {
+                color: #212121;
+                line-height: 50px;
+                margin-right: 10px;
+            }
+            .cart-checkbox-all {
+                left: 0;
+                position: absolute;
+            }
+            .ant-btn {
+                margin-left: 10px;
+                height: 50px;
+                font-size: 18px;
+                width: 105px;
+            }
+            .ant-btn-primary {
+                width: 175px;
+            }
+            .user-cart-toolbar-count {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.cart-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 260px;
+    justify-content: space-between;
+    .cart-card-img-container {
+        width: 210px;
+        height: 210px;
+        border: .5px solid #BFBFBF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .cart-card-img {
+            height: auto;
+            width: auto;
+            max-width: 208px;
+            max-height: 208px;
+        }
+        .cart-card-checkbox {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+        }
+    }
+    .cart-card-toolbar {
+        display: flex;
+        color: #000;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        .cart-card-info {
+            display: flex;
+            flex-direction: column;
+            .cart-card-size {
+                font-size: 12px;
+                color: #8A8A8A;
+                font-weight: 300;
+            }
+        }
+        .cart-card-del {
+            flex-shrink: 0;
+            display: flex;
+            width: 20px;
+            height: 20px;
+            padding-left: 1px;
+            border-radius: 10px;
+            border: 1px solid #9B9B9B;
+            color: #9B9B9B;
+            align-items: center;
+            justify-content: center;
+        }
+        .cart-card-del:hover {
+            color: #ffffff;
+            background: #616161;
+        }
+    }
+}
+
+.q-img-modal {
+    .img-detail-card {
+        padding: 20px;
+        background: #FFFFFF;
+        position: relative;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.16);
+        .img-close-btn {
+            right: 12px;
+            z-index: 99;
+            cursor: pointer;
+            position: absolute;
+            font-size: 22px;
+            top: 8px;
+            display: inline-block;
+            vertical-align: top;
+            color: @gray-text-color;
+        }
+        .container {
+            display: flex;
+            position: relative;
+            .hover-btn {
+                position: absolute;
+                top: 10px;
+                left: 450px;
+                .img-btn {
+                    width: 35px;
+                    height: 25px;
+                    border: none;
+                    background: #E0E0E0;
+                    border-radius: 3px;
+                    margin-left: 5px;
+                    .icon-font-ourimg {
+                        margin-top: 2px;
+                    }
+                    &.marked {
+                        color: @theme-color;
+                    }
+                    &:hover {
+                        color: #000;
+                        &.marked {
+                            color: @light-theme-color;
+                        }
+                    }
+                }
+            }
+            .img-element-container {
+                width: 400px;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img-element {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+            .img-info {
+                flex: 1;
+                width: 380px;
+                position: relative;
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .title {
+                    overflow: hidden;
+                    width: 380px;
+                    text-overflow: ellipsis;
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                    color: #000000;
+                }
+                .info-list {
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: @gray-text-color;
+                }
+            }
+        }
+    }
+    .img-tags {
+        // flex: 1;
+        .tags-title {
+            font-size: 16px;
+            color: #000000;
+            line-height: 28px;
+            margin-bottom: 0px;
+        }
+        .tags {
+            margin: 4px 0 0 0;
+            .ant-tag {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

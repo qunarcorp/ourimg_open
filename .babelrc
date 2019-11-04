@@ -1,0 +1,13 @@
+{
+    "presets": ["es2015", "stage-2", "react","react-native-stage-0/decorator-support"],
+    "plugins": [
+        [
+            "transform-runtime",
+            {
+                "helpers": false,
+                "polyfill": false,
+                "regenerator": true,
+                "moduleName": "babel-runtime"
+            }
+        ]]
+}

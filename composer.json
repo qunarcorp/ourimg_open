@@ -1,0 +1,15 @@
+{
+  "require": {
+    "heyanlong/flax": "^1.0",
+    "aws/aws-sdk-php": "^3.104",
+    "phpoffice/phpspreadsheet": "^1.8.2",
+    "phpmailer/phpmailer": "^6.0",
+    "setasign/fpdf": "^1.8"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}

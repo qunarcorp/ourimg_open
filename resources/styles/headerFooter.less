@@ -1,0 +1,180 @@
+@bborder-color: #001529;
+.q-header-document {
+    height: 64px;
+    width: 100%;
+    &.high {
+        height: 88px;
+    }
+}
+.q-header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    .browser-hint {
+        line-height: 24px;
+        background-color: @background-pink;
+        .hint-content {
+            width: @content-width;
+            margin: auto;
+            text-align: center;
+        }
+        .close-btn {
+            float: right;
+            cursor: pointer;
+        }
+    }
+    .q-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .logo {
+        margin-right: 10px;
+        font-size: 26px;
+        color: #FFFFFF;
+        > a {
+            text-decoration: none;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+    .q-navbar {
+        display: flex;
+        justify-content: space-around;
+        .q-menu {
+            flex: 1;
+            overflow: hidden;
+            .ant-menu-item {
+                border-bottom: 2px solid @bborder-color;
+                margin-top: -2px;
+                padding: 0;
+                .menu-span {
+                    width: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .ant-menu-item-selected {
+                background-color: @bborder-color !important;
+                border-bottom: 2px solid #ffffff;
+                // padding: 0 13px;
+                .menu-span {
+                    font-size: 18px;
+                }
+            }
+            .ant-menu-item-active {
+                border-bottom: 2px solid #ffffff;
+            }
+        }
+        .qsso {
+            margin-top: -2px;
+            // border-bottom: 2px solid @bborder-color;
+            .log-span {
+                color: rgba(255, 255, 255, 0.65);
+                cursor: pointer;
+            }
+            .dropdown-container {
+                height: 64px;
+                position: relative;
+                z-index: 100;
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+                .username {
+                    display: block;
+                    height: 64px;
+                }
+                .dropdown-card {
+                    // background: #001529;
+                    background: #001429;
+                    margin-top: 10px;
+                    width: 80px;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    > span {
+                        display: block;
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .icon-span {
+                font-family: 'iconfont-ourimg';
+                font-size: 18px;
+            }
+            .qsso-group {
+                display: flex;
+                align-items: center;
+                span {
+                    margin-right: 10px;
+                }
+                .relative {
+                    position: relative;
+                }
+                .cart-num {
+                    position: absolute;
+                    right: -48px;
+                    top: -24px;
+                    margin: 0;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    // background-color: #F275A1;
+                    background-color: @theme-color;
+                    display: flex;
+                    line-height: 80px;
+                    justify-content: center;
+                    font-size: 66px;
+                    transform: scale(0.1);
+                    transform-origin: center center;
+                }
+
+                > a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .search-container {
+        overflow: hidden;
+        margin-right: 10px;
+        button, input {
+            border-radius: 0;
+        }
+    }
+}
+.q-footer {
+    background: @bborder-color;
+    color: rgba(255, 255, 255, 0.65);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ant-modal-body {
+    .ant-form.ant-form-horizontal.qsso-login-form {
+        width: 80%;
+        margin: 0 auto;
+        input {
+            border: 1px solid #CCC;
+            background-color: #FFFFFF;
+        }
+        button {
+            display:block;
+            margin:0 auto;
+        }
+        .ant-form-item {
+            margin-top: 30px;
+        }
+    }
+}

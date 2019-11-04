@@ -1,0 +1,139 @@
+.my-serial-page {
+    padding-top: 3px;
+    .ant-tabs-tab {
+        color: #000;
+        font-size: 18px;
+        width: 100px;
+        text-align: center;
+        margin-right: 0px;
+    }
+    .ant-btn {
+        height: 35px;
+    }
+    .search-param {
+        position: relative;
+        height: 35px;
+        margin-top: 20px;
+    }
+    .tab {
+        font-size: 18px;
+        color: #000;
+    }
+    .select {
+        width: 140px;
+        height: 35px;
+        position: absolute;
+        left: 20px;
+    }
+    .search {
+        width: 287px;
+        height: 35px;
+        position: absolute;
+        right: 20px;
+        .ant-input-search-button {
+            height: 35px;
+        }
+    }
+    .line {
+        border-bottom: 1px solid rgba(213, 213, 213, 0.32);
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+    .serial-content {
+        // margin-top: 15px;
+        // margin-left: 20px;
+    }
+    .pagination {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .item {
+        display: inline-block;
+        margin-right: 16px;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+    .img-box {
+        width: 224px;
+        height: 224px;
+        line-height: 224px;
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.1);
+        > a {
+            display: block;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+        &:hover {
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.28);
+        }
+        // 更改antd checkbox 样式
+        .ant-checkbox-wrapper {
+            bottom: 4px;
+            right: 4px;
+            position: absolute;
+            height: 18px;
+            width: 18px;
+        }
+        .ant-checkbox {
+            position: absolute;
+        }
+        .ant-checkbox-inner {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    .img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .title-line {
+        width: 224px;
+        margin-top: 10px;
+        display: flex;
+    }
+    .title {
+        color: #000;
+        margin-left: 8px;
+        margin-right: 8px;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex: 1;
+    }
+    .icon-downloads {
+        margin-right: 3px;
+        color: #616161;
+    }
+    .text-downloads {
+        color: #616161;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .operation-box {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .delete {
+        margin-right: 4px;
+        // color: #F275A1;
+        color: @theme-color;
+        cursor: pointer;
+    }
+    .delete-all {
+        // color: #F275A1;
+        color: @theme-color;
+        cursor: pointer;
+    }
+    .download-image-operation {
+        cursor: pointer;
+    }
+}

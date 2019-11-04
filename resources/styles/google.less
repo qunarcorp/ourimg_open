@@ -1,0 +1,41 @@
+.googleSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        box-shadow: 0 0  10px rgba(0,0,0, 0.1);
+        .header {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background: #FAF9FF;
+        }
+        .content {
+            padding: 20px;
+            background: #FFFFFF;
+            .filter-item {
+                min-height: 30px;
+                display: flex;
+                // align-items: center;
+                .filter-label {
+                    font-family: PingFangSC-Medium;
+                    width: 86px;
+                    font-size: 14px;
+                    color: #212121;
+                    flex-shrink: 0;
+                }
+                .ant-checkbox-group-item {
+                    margin-right: 15px;
+                    margin-bottom: 10px;
+                }
+                .filter-checkbox-container {
+                    // 防溢出预留
+                }
+                .filter-dropdown {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.statistics-page {
+    margin-left: 15px;
+    .tab-bar {
+        display: flex;
+        justify-content: space-between;
+        .store-tab {
+            color: #fff;
+            width: 140px;
+            height: 50px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 200;
+            padding-top: 12px;
+            border-radius: 5px;
+            text-align: center;
+            &.img {
+                background-color: #FF8CAF;
+            }
+            &.place {
+                background-color: #88A4FB;
+            }
+            &.points {
+                background-color: #9987F6;
+            }
+            &.interaction {
+                background-color: #00D3E4;
+            }
+            &.audit {
+                background-color: #26CC6A;
+            }
+            &.user_statistics {
+                background-color: #FF8D6B;
+            }
+        }
+    }
+    .statistics-content {
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 25px 15px;
+        .statistics-content-title {
+            font-size: 22px;
+            color: #000000;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .statistics-panel {
+            display: flex;
+            display: block;
+            .panel-bar {
+                display: flex;
+                // justify-content: space-around;
+                .panel {
+                    color: #F15A99;
+                    width: 120px;
+                    height: 60px;
+                    border: #F15AA9 2px solid;
+                    border-radius: 10px;
+                    margin: 10px;
+                    font-size: 16px;
+                    font-weight: 200;
+                    padding-top: 5px;
+                    text-align: center;
+                    cursor: pointer;
+                    .main-title {
+                        display: inherit;
+                        font-size: 15px;
+                        line-height: 28px;
+                    }
+                }
+                .check {
+                    color: #FFFFFF;
+                    background-color: #F15A99;
+                }
+                .panel-tab {
+                    cursor: pointer;
+                }
+            }
+            .breadcrumb {
+                cursor: pointer;
+            }
+            .tab-user-and-dept {
+                color: rgba(0, 0, 0, 0.65)
+            }
+            .search {
+                height: 40px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                button {
+                    height: 40px;
+                }
+            }
+            .export-btn {
+                height: 40px;
+                float:right;
+                // margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 90px;
+                padding-top: 5px;
+                font-size: 15px;
+            }
+        }
+    }
+}
